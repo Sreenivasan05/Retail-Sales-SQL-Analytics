@@ -1,30 +1,126 @@
-# Retail Sales SQL Analytics Case Study
 
-## Project Objective
-The goal of this project is to analyze retail sales transaction data using SQL
-to extract meaningful business insights related to sales performance,
-profitability, customer behavior, and time-based trends.
+# Retail Sales Analytics & Performance Dashboard
 
-## Dataset
-- Source: OpenDataBay – Retail Sales Analytics Dataset
-- Total Records: 1,195
-- Key Columns: Order ID, Amount, Profit, Quantity, Category, Sub-Category,
-  Payment Mode, Order Date, Customer, State, City, Year-Month
+## Project Overview
 
-## Tools Used
-- PostgreSQL
-- SQL (CTEs, Window Functions, Aggregations)
+This end-to-end data analytics project analyzes **retail sales transactions using SQL** and transforms the insights into an **interactive Power BI dashboard** for business decision-making.
 
-##  Key Questions Answered
-- Which categories and sub-categories drive the most revenue and profit?
-- Who are the top customers and how much do they contribute?
-- Are there loss-making products or regions?
-- How do sales and profits trend over time?
+The objective is to demonstrate the **complete analytics workflow**:
 
-## Key Insights
+**Raw Data → SQL Analysis → Business Insights → Interactive Visualization**
 
-- Sales and profits are evenly distributed across Office Supplies, Electronics, and Furniture, each contributing ~₹2M in sales, indicating a diversified and low-risk revenue mix.
-- Sub-categories such as Paper, Markers, Chairs, Tables, and Printers deliver disproportionately high profit margins, making them key profit drivers despite similar overall category sales.
-- Sales show a steady upward trend over time, with noticeable month-to-month fluctuations, reflecting seasonal demand patterns common in retail businesses.
-- Approximately 58% of customers are repeat buyers, and a small group of top customers contributes a significant share of total revenue, highlighting the importance of customer retention strategies.
-- Several cities generate high sales volumes but relatively lower profit margins, suggesting opportunities for cost optimization or pricing strategy improvements at a regional level.
+This project highlights skills in **SQL, data analysis, business intelligence, and data storytelling**.
+
+---
+
+## Dataset Information
+
+**Source:** OpenDataBay – Retail Sales Analytics Dataset
+**Total Records:** 1,195
+
+**Key Fields**
+
+* Order ID
+* Order Date (Year–Month)
+* Category & Sub-Category
+* Sales Amount, Profit, Quantity
+* Customer Name
+* City & State
+* Payment Mode
+
+---
+
+## Tools & Technologies
+
+* **PostgreSQL** – Data querying and analytical SQL
+* **SQL Concepts Used**
+
+  * CTEs
+  * Window Functions
+  * Aggregations
+  * Time-based analysis
+* **Power BI Desktop** – Interactive dashboard development
+* **Power Query** – Data cleaning and transformation
+* **DAX** – KPI and calculated measure creation
+
+---
+
+## Project Architecture
+
+```
+Retail Dataset
+      ↓
+PostgreSQL SQL Analysis
+      ↓
+Business Insights Extraction
+      ↓
+Power BI Dashboard Visualization
+```
+
+---
+
+## Business Questions Answered
+
+### Sales & Profitability
+
+* Which categories and sub-categories generate the highest **revenue and profit**?
+* Are there **loss-making products or regions**?
+
+### Customer Behavior
+
+* Who are the **top contributing customers**?
+* What percentage of customers are **repeat buyers**?
+
+### Time-Based Trends
+
+* How do **sales and profits change over time**?
+* Are there **seasonal demand patterns**?
+
+### Regional & Payment Insights
+
+* Which **cities or states** drive sales but show **low profit margins**?
+* What are the **preferred payment modes**?
+
+---
+
+## SQL Analysis Highlights
+
+* Performed **category-wise and sub-category profitability analysis**
+* Identified **top customers using ranking window functions**
+* Conducted **monthly trend analysis** for sales and profit
+* Detected **low-margin regions** for optimization opportunities
+
+---
+
+## Key Business Insights
+
+* Revenue and profit are **balanced across Office Supplies, Electronics, and Furniture (~₹2M each)**, reducing dependency risk.
+* Specific sub-categories (**Paper, Markers, Chairs, Tables, Printers**) generate **higher profit margins**, making them strategic focus areas.
+* Sales show **steady growth with seasonal fluctuations**, typical of retail demand cycles.
+* Around **58% of customers are repeat buyers**, and a **small group contributes a large revenue share**, highlighting retention importance.
+* Some **high-sales cities have lower profit margins**, indicating **pricing or cost optimization opportunities**.
+
+---
+
+## Data Preparation Steps
+
+* Validated and corrected **data types in Power Query**
+* Built **DAX measures**:
+
+  * Total Sales
+  * Total Profit
+  * Profit Margin
+  * Customer Segmentation
+* Added **interactive slicers** for:
+
+  * Year
+  * Category
+  * Region
+
+---
+
+## Project Outcomes
+
+* Demonstrates **end-to-end analytics capability** from SQL to dashboarding
+* Converts **raw transactional data into actionable business insights**
+* Provides a **decision-support dashboard** for retail stakeholders
